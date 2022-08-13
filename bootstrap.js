@@ -48,7 +48,7 @@ function startLavalink() {
     console.log("Checking if APP_NAME is specified...")
     if(APP_NAME){
         console.log("I will visit myself every 20 minutes because APP_NAME specified!");
-        setInterval(keepAlive, 20*60*100);
+        setInterval(keepAlive, 20*60*1000);
     }else{
         console.log("I will not visit myself every 20 minutes, APP_NAME is not specified!")
         console.log("If you are using the free tier, Heroku will make this project sleep after 30 minutes unless there is http activity.")
